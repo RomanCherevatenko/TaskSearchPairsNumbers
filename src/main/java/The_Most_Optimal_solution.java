@@ -8,7 +8,7 @@ public class The_Most_Optimal_solution {
     }
 
     static void Pair(int[] a, int sum) {
-        Map<Integer, Integer> pairs = new HashMap<>();
+        Map<Integer, Integer> pairs = new HashMap<>();  //O(n)
         for (int i = 0; i < a.length; i++) {
             if (pairs.containsKey(sum - a[i]))
                 System.out.println("(" + a[i] + "," + (sum - a[i]) + ")");
